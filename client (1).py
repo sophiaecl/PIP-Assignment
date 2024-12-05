@@ -9,6 +9,7 @@ if __name__ == '__main__':
     c_socket.connect((ADDRESS, PORT))
 
     print('Connected to server on address', ADDRESS)
+    print('Hello')
 
     try:
         c_socket.sendall('Hello server'.encode('ascii'))
